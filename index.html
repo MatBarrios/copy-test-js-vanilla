@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css"> <!--browser adaptability-->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" href="./img/coloredByte.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="./js/api.js" async></script>
+    <script src="./js/carousel.js" async></script>
+    <script src="./js/comments.js" async></script>
+
+    <title>Front-End Test - Mateo</title>
+</head>
+
+<body>
+    <header>
+        <div class="profile_img">
+            <img 
+            id="profile" 
+            src="https://picsum.photos/id/1062/200/200" 
+            alt="profile"
+            >
+        </div>
+        <div class="header_text">
+            <h3 class="user">Erik Dunlop</h3>
+            <h4 class="location">San Francisco, California</h4>
+        </div>
+    </header>
+
+    <!-- SWIPER -->
+    <div class="swiper">
+        <div id="swiper-wrap" class="swiper-wrapper">
+            <div id="slide1" class="swiper-slide"></div>
+            <div id="slide2" class="swiper-slide"></div>
+            <div id="slide3" class="swiper-slide"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <!-- ICONS  -->
+    <div class="icons_container">
+        <div id="heart_icon">
+            <input 
+            type="checkbox" 
+            id="favorite" 
+            name="favorite-checkbox" 
+            value="favorite-button"
+            >
+            <label for="favorite" class="like_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+            </label>      
+        </div>
+        <div id="msg_icon">
+            <label for="message">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.6444 15.9944C20.8595 13.8925 21.2678 11.4202 20.7931 9.03916C20.3184 6.65816 18.9932 4.53141 17.0649 3.05622C15.1366 1.58103 12.7372 0.858298 10.3149 1.02305C7.89265 1.1878 5.61321 2.22875 3.90242 3.95146C2.19163 5.67416 1.16651 7.96077 1.01858 10.3841C0.870644 12.8075 1.61001 15.2018 3.09855 17.1198C4.58708 19.0378 6.72298 20.3483 9.10721 20.8065C11.4915 21.2646 13.9609 20.8391 16.0544 19.6094L20.9884 20.9864L19.6444 15.9944Z" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+            </label>
+                
+        </div>
+        <div id="share_icon">
+            <label for="send">
+                <svg width="22" height="22" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 1L8.21802 8.083" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
+                    <path d="M10.698 18.334L21 1.001H1L8.218 8.084L10.698 18.334Z" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+            </label>    
+        </div>
+    </div>
+
+    <!-- COMMENTS SECTION -->
+    <div id="description_wrapper">
+        <div>
+            <p class="desc"><b>Lucas Credie</b> dolor sit amet, consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et tristique proin. Mi enim ut eu cras ultrices eget et tristique proin.</p>
+            <p class="comment_example"><b>Comment</b> consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et</p>
+            
+            <div id="new_comment">&nbsp</div> 
+        </div>
+        <label class="input_container">
+            <input
+                id="input" 
+                type="text" 
+                placeholder="consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et"
+                >
+            <button 
+                type="button"
+                name="button"
+                id="comment_btn"
+                >
+                Post
+            </button>
+        </label>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> 
+    <!-- by placing swiper script here, it renders better -->
+</body>
+</html>
